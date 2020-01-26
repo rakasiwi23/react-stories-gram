@@ -1,7 +1,7 @@
 {
   "name": "react-stories",
   "version": "1.0.0",
-  "description": "Based on react-insta-stories",
+  "description": "React component like instagram stories. Based on react-insta-stories",
   "main": "dist/react-stories.cjs.js",
   "module": "dist/react-stories.esm.js",
   "types": "dist/react-stories.cjs.d",
@@ -14,9 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/rakasiwi23/react-stories.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "stories",
+    "react",
+    "instagram"
+  ],
+  "author": "rakasiwi23",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rakasiwi23/react-stories/issues"
   },
@@ -42,5 +46,13 @@
   "peerDependencies": {
     "react": "^16.8.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    "dist/declarations",
+    "dist/react-stories.cjs",
+    "dist/react-stories.dev.js",
+    "dist/react-stories.prod.js",
+    "dist/react-stories.esm.js",
+    "dist/react-stories.cjs.d.ts"
+  ]
 }
