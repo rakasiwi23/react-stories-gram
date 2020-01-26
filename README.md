@@ -5,7 +5,7 @@ This is a [react-insta-stories](https://github.com/mohitk05/react-insta-stories)
 ## Install
 
 ```bash
-npm install --save react-insta-stories
+npm install --save react-stories-gram
 ```
 
 ## Usage
