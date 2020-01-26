@@ -4,7 +4,7 @@ This is a [react-insta-stories](https://github.com/mohitk05/react-insta-stories)
 
 ## Why
 
-Because react-insta-stories is not SSR friendly (I tried using my custom react SSR project, the package not work). My I assumption is because their target output library is 'UMD'. That's why I create and modify it and make the output using 'ESM'. And it work's for me.
+Because react-insta-stories is not SSR friendly. I tried using my custom react SSR project, the package not work(got document/window undefined error). My I assumption is because their target output library is 'UMD'. That's why I create and modify it and make the output using 'ESM'. And it work's for me.
 
 ## Install
 
