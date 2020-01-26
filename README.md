@@ -1,4 +1,4 @@
-# react-stories
+# react-stories-gram
 
 This is a [react-insta-stories](https://github.com/mohitk05/react-insta-stories), but with modified output bundler (ESM)
 
