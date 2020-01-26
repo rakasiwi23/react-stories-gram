@@ -13,7 +13,7 @@ npm install --save react-stories-gram
 ```jsx
 import React, { Component } from "react";
 
-import Stories from "react-insta-stories";
+import Stories from "react-stories-gram";
 
 class App extends Component {
   render() {
