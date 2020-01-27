@@ -2,13 +2,14 @@
   "name": "react-stories-gram",
   "version": "1.0.1",
   "description": "React component like instagram stories. Based on react-insta-stories",
-  "main": "dist/react-stories.cjs.js",
-  "module": "dist/react-stories.esm.js",
+  "main": "dist/react-stories-gram.cjs.js",
+  "module": "dist/react-stories-gram.esm.js",
   "types": "dist/react-stories.cjs.d",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "construct": "preconstruct init",
-    "build": "preconstruct build"
+    "build": "preconstruct build",
+    "fix": "preconstruct fix"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
   },
   "dependencies": {},
   "files": [
+    "dist/",
     "dist/declarations",
     "dist/react-stories.cjs",
     "dist/react-stories.dev.js",
