@@ -1,6 +1,6 @@
 {
   "name": "react-stories-gram",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component like instagram stories. Based on react-insta-stories",
   "main": "dist/react-stories.cjs.js",
   "module": "dist/react-stories.esm.js",
