@@ -1,9 +1,9 @@
-import React, { useContext, useState, useRef, useEffect } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import GlobalContext from './../context/Global'
 import ProgressContext from './../context/Progress'
-import Story from './Story'
-import ProgressArray from './ProgressArray'
 import { GlobalCtx } from './../interfaces'
+import ProgressArray from './ProgressArray'
+import Story from './Story'
 
 export default function () {
     const [currentId, setCurrentId] = useState<number>(0)
@@ -135,7 +135,7 @@ export default function () {
     }
 
     return (
-        <div style={{ ...styles.container, ...{ width, height } }}>
+        <div className="stories-container" style={{ ...styles.container, ...{ width, height } }}>
             <ProgressContext.Provider value={{
                 bufferAction: bufferAction,
                 videoDuration: videoDuration,

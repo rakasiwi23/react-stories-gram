@@ -1,16 +1,16 @@
-import React, { useState, useEffect, useContext, useRef } from "react";
-import { StoryProps, GlobalCtx } from "./../interfaces";
+import React, { useContext, useEffect, useRef, useState } from "react";
+import GlobalContext from "./../context/Global";
+import { GlobalCtx, StoryProps } from "./../interfaces";
+import globalStyle from "./../styles.css";
 import Header from "./Header";
 import SeeMore from "./SeeMore";
-import globalStyle from "./../styles.css";
-import GlobalContext from "./../context/Global";
 
 const Story = (props: StoryProps) => {
   const [loaded, setLoaded] = useState<boolean>(false);
   const [showMore, setShowMore] = useState<boolean>(false);
 
   const { width, height, loader, header, storyStyles } = useContext<GlobalCtx>(
-    GlobalContext,
+    GlobalContext
   );
 
   useEffect(() => {
@@ -109,7 +109,10 @@ const Story = (props: StoryProps) => {
 
   let isHeader = typeof props.story === "object" && props.story.header;
   return (
-    <div style={{ ...styles.story, width: width, height: height }}>
+    <div
+      className="stories-story"
+      style={{ ...styles.story, width: width, height: height }}
+    >
       {getStoryContent()}
       {isHeader && (
         <div style={{ position: "absolute", left: 12, top: 20, zIndex: 19 }}>
@@ -139,7 +142,7 @@ const Story = (props: StoryProps) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            color: "#ccc",
+            color: "#ccc"
           }}
         >
           {loader || <div className={globalStyle.spinner} />}
@@ -153,7 +156,7 @@ const Story = (props: StoryProps) => {
             bottom: showMore ? "unset" : 0,
             zIndex: 9999,
             width: "100%",
-            height: showMore ? "100%" : "auto",
+            height: showMore ? "100%" : "auto"
           }}
         >
           <SeeMore
@@ -172,14 +175,14 @@ const styles = {
   story: {
     display: "flex",
     position: "relative",
-    overflow: "hidden",
+    overflow: "hidden"
   },
   storyContent: {
     width: "auto",
     maxWidth: "100%",
     maxHeight: "100%",
-    margin: "auto",
-  },
+    margin: "auto"
+  }
 };
 
 export default Story;
